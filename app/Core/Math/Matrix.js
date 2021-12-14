@@ -1,4 +1,4 @@
-// m4[row][column]
+
 function M4x4() 
 {
 
@@ -42,17 +42,15 @@ M4x4.prototype.assignFromArray = function(arr)
     this.r1c2 = arr[1][2];
     this.r1c3 = arr[1][3];
 
-    this.r2c0 = 8;
+    this.r2c0 = arr[2][0];
+    this.r2c1 = arr[2][1];
+    this.r2c2 = arr[2][2];
+    this.r2c3 = arr[2][3];
 
-    
-    this.r2c1 = 9;
-    this.r2c2 = 10;
-    this.r2c3 = 11;
-
-    this.r3c0 = 12;
-    this.r3c1 = 13;
-    this.r3c2 = 14;
-    this.r3c3 = 15;
+    this.r3c0 = arr[3][0];
+    this.r3c1 = arr[3][1];
+    this.r3c2 = arr[3][2];
+    this.r3c3 = arr[3][3];
 
 
 }
